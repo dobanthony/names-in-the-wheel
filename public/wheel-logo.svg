@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Background Circle -->
+  <circle cx="250" cy="250" r="240" fill="url(#bgGradient)" stroke="#4F46E5" stroke-width="8"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="segment1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444" />
+      <stop offset="100%" style="stop-color:#F97316" />
+    </linearGradient>
+    
+    <linearGradient id="segment2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6" />
+      <stop offset="100%" style="stop-color:#06B6D4" />
+    </linearGradient>
+    
+    <linearGradient id="segment3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981" />
+      <stop offset="100%" style="stop-color:#34D399" />
+    </linearGradient>
+    
+    <linearGradient id="segment4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B" />
+      <stop offset="100%" style="stop-color:#FCD34D" />
+    </linearGradient>
+    
+    <linearGradient id="segment5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6" />
+      <stop offset="100%" style="stop-color:#C084FC" />
+    </linearGradient>
+    
+    <linearGradient id="segment6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899" />
+      <stop offset="100%" style="stop-color:#F472B6" />
+    </linearGradient>
+    
+    <linearGradient id="segment7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4" />
+      <stop offset="100%" style="stop-color:#22D3EE" />
+    </linearGradient>
+    
+    <linearGradient id="segment8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316" />
+      <stop offset="100%" style="stop-color:#FB923C" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Wheel Segments (8 segments) -->
+  <!-- Segment 1 -->
+  <path d="M250,250 L250,50 A200,200 0 0,1 391.4,108.6 Z" fill="url(#segment1)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 2 -->
+  <path d="M250,250 L391.4,108.6 A200,200 0 0,1 450,250 Z" fill="url(#segment2)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 3 -->
+  <path d="M250,250 L450,250 A200,200 0 0,1 391.4,391.4 Z" fill="url(#segment3)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 4 -->
+  <path d="M250,250 L391.4,391.4 A200,200 0 0,1 250,450 Z" fill="url(#segment4)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 5 -->
+  <path d="M250,250 L250,450 A200,200 0 0,1 108.6,391.4 Z" fill="url(#segment5)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 6 -->
+  <path d="M250,250 L108.6,391.4 A200,200 0 0,1 50,250 Z" fill="url(#segment6)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 7 -->
+  <path d="M250,250 L50,250 A200,200 0 0,1 108.6,108.6 Z" fill="url(#segment7)" stroke="#FFFFFF" stroke-width="3"/>
+  <!-- Segment 8 -->
+  <path d="M250,250 L108.6,108.6 A200,200 0 0,1 250,50 Z" fill="url(#segment8)" stroke="#FFFFFF" stroke-width="3"/>
+  
+  <!-- Outer Ring -->
+  <circle cx="250" cy="250" r="200" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+  <circle cx="250" cy="250" r="195" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  
+  <!-- Center Hub -->
+  <circle cx="250" cy="250" r="45" fill="#FFFFFF" stroke="#4F46E5" stroke-width="6"/>
+  <circle cx="250" cy="250" r="35" fill="#4F46E5"/>
+  <circle cx="250" cy="250" r="20" fill="#FFFFFF"/>
+  
+  <!-- Center Play Icon -->
+  <polygon points="240,232 240,268 268,250" fill="#4F46E5"/>
+  
+  <!-- Pointer Arrow at Top -->
+  <polygon points="250,20 225,65 275,65" fill="#EF4444" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Sparkle Effects -->
+  <circle cx="120" cy="120" r="4" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="380" cy="150" r="3" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="400" cy="350" r="4" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="100" cy="380" r="3" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="250" cy="70" r="3" fill="#FCD34D" opacity="0.8"/>
+  
+  <!-- Text Around Wheel -->
+  <text x="250" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(-20, 250, 180)">EMMA</text>
+  <text x="320" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(25, 320, 210)">LIAM</text>
+  <text x="350" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(70, 350, 280)">OLIVIA</text>
+  <text x="320" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(115, 320, 340)">NOAH</text>
+  <text x="250" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(160, 250, 360)">AVA</text>
+  <text x="180" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(205, 180, 340)">ETHAN</text>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(250, 150, 280)">SOPHIA</text>
+  <text x="180" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(295, 180, 210)">MASON</text>
+  
+  <!-- Bottom Text -->
+  <text x="250" y="480" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4F46E5" text-anchor="middle">Names in the Wheel</text>
+</svg>
