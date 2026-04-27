@@ -1,17 +1,17 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
+  <div class="min-h-screen bg-gradient-to-br from-sky-300 via-sky-400 to-blue-500">
     <!-- Sticky Top Bar Menu -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-lg">
       <div class="px-4 md:px-6 py-3 md:py-4">
         <div class="flex items-center justify-between">
           <!-- Logo and Title -->
           <div class="flex items-center gap-2 md:gap-3">
-            <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-md">
+            <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-sky-400 to-blue-600 rounded-xl flex items-center justify-center shadow-md">
               <svg class="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
+            <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-700">
               Names in the Wheel
             </h1>
           </div>
@@ -19,18 +19,18 @@
           <!-- Right Side Icons -->
           <div class="flex items-center gap-2 md:gap-4">
             <!-- Name Count Badge -->
-            <div class="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-indigo-50 rounded-full shadow-sm">
-              <svg class="w-4 h-4 md:w-5 md:h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-sky-50 rounded-full shadow-sm">
+              <svg class="w-4 h-4 md:w-5 md:h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
               </svg>
-              <span class="text-indigo-700 font-bold text-sm md:text-base">{{ names.length }}</span>
+              <span class="text-sky-700 font-bold text-sm md:text-base">{{ names.length }}</span>
             </div>
             
             <!-- Sound Toggle Icon -->
             <button
               @click="soundEnabled = !soundEnabled"
               class="w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-full transition-all shadow-sm"
-              :class="soundEnabled ? 'bg-indigo-100 text-indigo-600 hover:bg-indigo-200' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'"
+              :class="soundEnabled ? 'bg-sky-100 text-sky-600 hover:bg-sky-200' : 'bg-gray-100 text-gray-400 hover:bg-gray-200'"
               :title="soundEnabled ? 'Sound On' : 'Sound Off'"
             >
               <svg v-if="soundEnabled" class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,14 +70,14 @@
                 <button
                   @click="spinWheel"
                   :disabled="isSpinning"
-                  class="w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 lg:w-24 lg:h-24 bg-white rounded-full shadow-2xl border-3 md:border-4 border-indigo-600 flex items-center justify-center transform hover:scale-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  class="w-14 h-14 sm:w-18 sm:h-18 md:w-22 md:h-22 lg:w-24 lg:h-24 bg-white rounded-full shadow-2xl border-3 md:border-4 border-sky-500 flex items-center justify-center transform hover:scale-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   <!-- Play Icon -->
-                  <svg v-if="!isSpinning" class="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 text-indigo-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                  <svg v-if="!isSpinning" class="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 text-sky-500 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
                   <!-- Spinner Icon -->
-                  <svg v-else class="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 text-indigo-600 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <svg v-else class="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 text-sky-500 animate-spin" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
@@ -95,7 +95,7 @@
         <!-- Right Column: Name Management -->
         <div class="w-full lg:w-[320px] xl:w-[360px] bg-white rounded-2xl md:rounded-3xl shadow-2xl p-4 md:p-5 flex flex-col">
           <h2 class="text-lg md:text-xl font-bold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
-            <svg class="w-5 h-5 md:w-6 md:h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 md:w-6 md:h-6 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
             <span>Name List</span>
@@ -108,13 +108,13 @@
                 v-model="newName"
                 type="text"
                 placeholder="Enter name..."
-                class="flex-1 px-3 md:px-4 py-2.5 md:py-3 text-sm border-2 border-gray-200 rounded-xl focus:border-indigo-500 focus:outline-none transition-colors"
+                class="flex-1 px-3 md:px-4 py-2.5 md:py-3 text-sm border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:outline-none transition-colors"
                 :disabled="isSpinning"
               />
               <button
                 type="submit"
                 :disabled="!newName.trim() || isSpinning"
-                class="px-4 md:px-5 py-2.5 md:py-3 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-1"
+                class="px-4 md:px-5 py-2.5 md:py-3 bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-1"
               >
                 <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
@@ -127,9 +127,9 @@
           <!-- Quick Actions -->
           <div class="flex gap-2 mb-3 md:mb-4">
             <button
-              @click="shuffleDefaultNames"
-              :disabled="isSpinning"
-              class="flex-1 py-2 md:py-2.5 px-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-xs md:text-sm font-medium transition-colors disabled:opacity-50 flex items-center justify-center gap-1.5"
+              @click="shuffleNames"
+              :disabled="isSpinning || names.length === 0"
+              class="flex-1 py-2 md:py-2.5 px-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-xs md:text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-1.5"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
@@ -138,8 +138,8 @@
             </button>
             <button
               @click="confirmClearAll"
-              :disabled="isSpinning"
-              class="flex-1 py-2 md:py-2.5 px-2 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg text-xs md:text-sm font-medium transition-colors disabled:opacity-50 flex items-center justify-center gap-1.5"
+              :disabled="isSpinning || names.length === 0"
+              class="flex-1 py-2 md:py-2.5 px-2 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg text-xs md:text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-1.5"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
@@ -151,7 +151,7 @@
           <!-- Bulk Import Toggle -->
           <button
             @click="showBulkImport = !showBulkImport"
-            class="text-indigo-600 hover:text-indigo-800 text-sm font-medium flex items-center gap-1.5 mb-2"
+            class="text-sky-600 hover:text-sky-700 text-sm font-medium flex items-center gap-1.5 mb-2"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="showBulkImport ? 'M19 9l-7 7-7-7' : 'M9 5l7 7-7 7'"></path>
@@ -165,7 +165,7 @@
               v-model="bulkNames"
               rows="3"
               placeholder="John, Jane, Alex..."
-              class="w-full px-3 py-2 text-sm border-2 border-gray-200 rounded-xl focus:border-indigo-500 focus:outline-none resize-none"
+              class="w-full px-3 py-2 text-sm border-2 border-gray-200 rounded-xl focus:border-sky-500 focus:outline-none resize-none"
             ></textarea>
             <button
               @click="importBulkNames"
@@ -192,7 +192,7 @@
               <div
                 v-for="name in names"
                 :key="name"
-                class="group relative px-3 md:px-4 py-2.5 md:py-3 bg-gradient-to-r from-indigo-50 to-purple-50 text-gray-700 rounded-xl text-sm font-medium border border-indigo-100 hover:shadow-md transition-all flex items-center justify-between"
+                class="group relative px-3 md:px-4 py-2.5 md:py-3 bg-gradient-to-r from-sky-50 to-blue-100 text-gray-700 rounded-xl text-sm font-medium border border-sky-200 hover:shadow-md transition-all flex items-center justify-between"
               >
                 <span class="truncate">{{ name }}</span>
                 <button
@@ -242,7 +242,7 @@
             <div class="text-center mt-3">
               <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-3">🎉 Selected Name</h3>
               
-              <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl md:rounded-2xl p-5 md:p-6 my-4 md:my-6">
+              <div class="bg-gradient-to-r from-sky-400 to-blue-600 rounded-xl md:rounded-2xl p-5 md:p-6 my-4 md:my-6">
                 <p class="text-2xl md:text-4xl lg:text-5xl font-bold text-white break-words">
                   {{ winner }}
                 </p>
@@ -261,7 +261,7 @@
               <div class="flex gap-3">
                 <button
                   @click="spinAgain"
-                  class="flex-1 py-2.5 md:py-3 px-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+                  class="flex-1 py-2.5 md:py-3 px-4 bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm md:text-base"
                 >
                   <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
@@ -825,9 +825,21 @@ const handleConfirm = () => {
   showConfirmModal.value = false
 }
 
-// Shuffle to new random 8 names
-const shuffleDefaultNames = () => {
-  names.value = getRandomDefaultNames()
+// ✅ FIXED: Shuffle only existing names (Fisher-Yates shuffle algorithm)
+const shuffleNames = () => {
+  if (names.value.length === 0) return
+  
+  // Create a copy of the current names array
+  const shuffled = [...names.value]
+  
+  // Fisher-Yates shuffle algorithm
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  
+  // Replace the names array with the shuffled version
+  names.value = shuffled
   winner.value = ''
   rotation.value = rotation.value + Math.random() * 2 * Math.PI
   nextTick(() => drawWheel())
